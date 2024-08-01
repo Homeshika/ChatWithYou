@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-main {
+  background-color: #646464;
+}
+
+.bg-button {
+  background-color: #404448;
+}
+
+.bg-appbar {
+  background-color: #464646;
+}
+
+.input-container {
+  position: relative;
+}
+
+
+.chat-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.input-container button {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.customscroll {
+  overflow-y: scroll;
+}
+
+.customscroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.customscroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.customscroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.customscroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Added Styles */
+.flex-1 {
+  flex: 1;
+}
+
+.rounded-lg {
+  border-radius: 10px;
+}
+
+.bg-green-500 {
+  background-color: #34d399; /* Green color */
+}
+
+/* Additional classes for sender and receiver messages */
+.flex.justify-end {
+  justify-content: flex-end;
+}
+
+
+.message-bubble {
+  word-wrap: break-word; /* Ensure long words wrap within the bubble */
+  max-width: 100%; /* Ensure the bubble doesn't exceed the width of its container */
+}
+
+
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+.max-33{
+  max-width: 33%;
+}
